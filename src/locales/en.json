@@ -242,5 +242,67 @@
       "save": "Save",
       "cancele": "Cancele"
     }
-  }
+  },
+  "articles": [
+    {
+      "id": 1,
+      "author": {
+        "id": 1,
+        "name": "Jonathan Reinink",
+        "avatar": "https://picsum.photos/seed/picsum/200/300",
+        "profile": "_blank"
+      },
+      "title": "Title Title Title Title Title",
+      "subTitle": "subTitle subTitle subTitle",
+      "image": "https://via.placeholder.com/150",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora blanditiis placeat dolorum. Inventore aliquam modi veritatis commodi ratione perspiciatis est unde, doloremque natus. Porro, dolores? Distinctio ducimus odit exercitationem illum!",
+      "date": "Aug 18",
+      "dateTime": "2015-05-16 19:00"
+    },
+    {
+      "id": 2,
+      "author": {
+        "id": 2,
+        "name": "Jonathan Reinink",
+        "avatar": "https://picsum.photos/seed/picsum/200/300",
+        "profile": "_blank"
+      },
+      "title": "Title Title Title Title Title",
+      "subTitle": "subTitle subTitle subTitle",
+      "image": "https://via.placeholder.com/150",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora blanditiis placeat dolorum. Inventore aliquam modi veritatis commodi ratione perspiciatis est unde, doloremque natus. Porro, dolores? Distinctio ducimus odit exercitationem illum!",
+      "date": "Aug 18",
+      "dateTime": "2015-05-16 19:00"
+    },
+    {
+      "id": 3,
+      "author": {
+        "id": 3,
+        "name": "Jonathan Reinink",
+        "avatar": "https://picsum.photos/seed/picsum/200/300",
+        "profile": "_blank"
+      },
+      "title": "Title Title Title Title Title",
+      "subTitle": "subTitle subTitle subTitle",
+      "image": "https://via.placeholder.com/150",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora blanditiis placeat dolorum. Inventore aliquam modi veritatis commodi ratione perspiciatis est unde, doloremque natus. Porro, dolores? Distinctio ducimus odit exercitationem illum!",
+      "date": "Aug 18",
+      "dateTime": "2015-05-16 19:00"
+    },
+    {
+      "id": 4,
+      "author": {
+        "id": 4,
+        "name": "Jonathan Reinink",
+        "avatar": "https://picsum.photos/seed/picsum/200/300",
+        "profile": "_blank"
+      },
+      "title": "Title Title Title Title Title",
+      "subTitle": "subTitle subTitle subTitle",
+      "image": "https://via.placeholder.com/150",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora blanditiis placeat dolorum. Inventore aliquam modi veritatis commodi ratione perspiciatis est unde, doloremque natus. Porro, dolores? Distinctio ducimus odit exercitationem illum!",
+      "date": "Aug 18",
+      "dateTime": "2015-05-16 19:00"
+    }
+  ]
 }
