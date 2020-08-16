@@ -1,5 +1,11 @@
 import React from 'react';
-import WorldMap from '../assets/world_map1.jpg';
+import AUB from '../assets/AUB_logo.3f1150ac.svg';
+import BiRiZ from '../assets/biRiZ_logo.d3aa371f.svg';
+import BlueChip from '../assets/blueChip_logo.2fd68ab2.svg';
+import ColumbiaGC from '../assets/columbiaGC_logo.d83e8aeb.svg';
+import DotLe from '../assets/dotLe_logo.358c40c7.svg';
+import ICDF from '../assets/ICDF_logo.d5934fe8.svg';
+import IstanbulUni from '../assets/istanbulUni_logo.90779e87.svg';
 export const testimonialsCarouselSettings = {
   dots: true,
   infinite: true,
@@ -44,25 +50,25 @@ export const OurProductsCarouselSettings = {
 
 export const ourPartnersInfo = [
   <div>
-    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={WorldMap} />
+    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={AUB} />
   </div>,
   <div>
-    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={WorldMap} />
+    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={BiRiZ} />
   </div>,
   <div>
-    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={WorldMap} />
+    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={BlueChip} />
   </div>,
   <div>
-    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={WorldMap} />
+    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={ColumbiaGC} />
   </div>,
   <div>
-    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={WorldMap} />
+    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={DotLe} />
   </div>,
   <div>
-    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={WorldMap} />
+    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={ICDF} />
   </div>,
   <div>
-    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={WorldMap} />
+    <img alt="Partner" className=" w-24 sm:w-24 xl:w-56" src={IstanbulUni} />
   </div>,
 ];
 export const testimonialsInfo = [

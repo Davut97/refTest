@@ -16,9 +16,7 @@ const UserProfileEdit = (props) => {
   const [lastName, setLastName] = useState(lastNameDemo);
   const [bio, setBio] = useState(props.userInfo.bio);
   const [location, setLocation] = useState(props.userInfo.location);
-  useEffect(() => {
-    props.getUserInfo();
-  }, [props]);
+
   const { t } = useTranslation();
   return (
     <div className="bg-blue-100 h-screen flex flex-col items-center justify-center">

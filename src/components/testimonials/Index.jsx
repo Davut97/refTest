@@ -24,7 +24,9 @@ function Testimonials() {
       </div>
       <div className="grid grid-cols-1 ">
         <div className="pt-16 pl-18 pb-20 sm:pl-10 lg:pl-34">
-          <h1 className="capitalize text-center text-xl">our partners</h1>
+          <h2 className="capitalize text-blue-700 font-bold text-3xl">
+            our partners
+          </h2>
         </div>
         <div className="pl-4 pb-6">
           <Carousel
