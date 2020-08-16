@@ -1,12 +1,20 @@
 import React from 'react';
 import {
-  testimonialsCarouselSettings,
   OurProductsCarouselSettings,
   ourPartnersInfo,
-  testimonialsInfo,
 } from '../../consts/TestimonialsConsts';
 import Carousel from '../carousel/Index';
 import WorldMap from '../../assets/world_map1.jpg';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+const testimonialsCarouselSettings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 2,
+};
 
 function Testimonials() {
   return (
@@ -16,10 +24,44 @@ function Testimonials() {
           <img alt="world Map" src={WorldMap} />
         </div>
         <div className="w-auto text-center sm:w-1/2 md:w-full lg:w-32 xl:w-2/4 pt-10 ">
-          <Carousel
-            settings={testimonialsCarouselSettings}
-            carouselData={testimonialsInfo}
-          ></Carousel>
+          <Slider {...testimonialsCarouselSettings}>
+            <div>
+              <h3 className="text-gray-600 pt-2">
+                Two lines of a short testimonial from someone want to say something,
+                and can say more to explain.
+              </h3>
+              <p className="text-gray-600 pt-2">
+                Louis Li,<br></br> Trainer at Recoded
+              </p>
+            </div>
+            <div>
+              <h3 className="text-gray-600 pt-2">
+                Two lines of a short testimonial from someone want to say something,
+                and can say more to explain.
+              </h3>
+              <p className="text-gray-600 pt-2">
+                Louis Li,<br></br> Trainer at Recoded
+              </p>
+            </div>
+            <div>
+              <h3 className="text-gray-600 pt-2">
+                Two lines of a short testimonial from someone want to say something,
+                and can say more to explain.
+              </h3>
+              <p className="text-gray-600 pt-2">
+                Louis Li,<br></br> Trainer at Recoded
+              </p>
+            </div>
+            <div>
+              <h3 className="text-gray-600 pt-2">
+                Two lines of a short testimonial from someone want to say something,
+                and can say more to explain.
+              </h3>
+              <p className="text-gray-600 pt-2">
+                Louis Li,<br></br> Trainer at Recoded
+              </p>
+            </div>
+          </Slider>
         </div>
       </div>
       <div className="grid grid-cols-1 ">

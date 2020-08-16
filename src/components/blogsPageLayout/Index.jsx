@@ -4,7 +4,6 @@ import { BlogsCarouselSettings, BlogsInfo } from '../../consts/BlogsConsts';
 import Carousel from '../carousel/Index';
 import BlogsCard from '../../components/blogsCard';
 import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
 
 function BlogsPageLayout() {
   const { t } = useTranslation();

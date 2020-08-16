@@ -67,7 +67,7 @@ export const ourPartnersInfo = [
 ];
 export const testimonialsInfo = [
   <div>
-    <h3 className="">
+    <h3 className="text-gray-600 pt-2">
       Two lines of a short testimonial from someone want to say something, and can
       say more to explain.
     </h3>
@@ -85,7 +85,7 @@ export const testimonialsInfo = [
     </p>
   </div>,
   <div>
-    <h3 className="">
+    <h3 className="text-gray-600 pt-2">
       Two lines of a short testimonial from someone want to say something, and can
       say more to explain.
     </h3>
