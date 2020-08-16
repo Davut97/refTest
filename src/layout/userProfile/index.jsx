@@ -6,6 +6,9 @@ import Carousel from '../../components/carousel/Index';
 import BlogsCard from '../../components/blogsCard';
 import { userProfileCarouselSettings } from '../../consts/userProfileConsts';
 import Avatar from '../../components/avatar';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+
 //personal Blogs Array is an array of blogs written by the same user
 const personalBlogsArray = [
   <BlogsCard />,
@@ -16,20 +19,23 @@ const personalBlogsArray = [
   <BlogsCard />,
 ];
 
-const userInfo = {
-  id: 1,
-  name: 'Jonathan Reinink',
-  avatar: 'https://via.placeholder.com/150',
-  profile: '',
-};
 const NavbarStyle =
   'z-10 flex flex-col md:flex-row items-center justify-center md:justify-between flex-wrap bg-transparent p-4';
 const Btn = 'hidden';
-const UserProfile = () => {
+const UserProfile = (props) => {
+  console.log(props.auth);
+  const userInfo = {
+    id: 1,
+    name: `${props.auth.displayName}`,
+    avatar: `${props.auth.photoURL}`,
+    profile: '',
+  };
   const [isOpen, setIsOpen] = useState(false);
   const handleIsOpen = () => {
     setIsOpen(!isOpen);
   };
+  if (!props.auth.uid) return <Redirect to="/" />;
+
   if (isOpen) {
     return <UserProfileEdit isButtonOpen={handleIsOpen} />;
   } else {
@@ -58,4 +64,10 @@ const UserProfile = () => {
     );
   }
 };
-export default UserProfile;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    auth: state.firebase.auth,
+    userInfo: state.firebase.profile,
+  };
+};
+export default connect(mapStateToProps)(UserProfile);

@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { ReactComponent as Camera } from '../../assets/camera.svg';
 import { useTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 
 import { changeBioAndLoc } from '../../store/actions/authAction';
 const UserProfileEdit = (props) => {
-  console.log(props.userInfo);
+  console.log(props.auth.uid);
   const firstNameDemo = props.userInfo.name
     ? props.userInfo.name.split(' ')[0]
     : props.auth.displayName.split(' ')[0];
@@ -18,14 +19,12 @@ const UserProfileEdit = (props) => {
   const [location, setLocation] = useState(props.userInfo.location);
 
   const { t } = useTranslation();
+  if (!props.auth.uid) return <Redirect to="/" />;
+
   return (
     <div className="bg-blue-100 h-screen flex flex-col items-center justify-center">
-      <div className="relative md:mb-16 mb-8 flex flex-col items-end">
-        <img
-          src="https://via.placeholder.com/150"
-          className="rounded-full"
-          alt="user"
-        />
+      <div className="relative md:mb-16 mb-8 flex flex-col items-end w-48">
+        <img src={props.auth.photoURL} className="rounded-full" alt="user" />
         <div className="absolute bottom-0 rounded-full bg-blue-600 p-2">
           <Camera className="w-5 text-white fill-current" />
         </div>
@@ -112,13 +111,6 @@ const UserProfileEdit = (props) => {
             <button
               className="uppercase md:text-base text-sm bg-transparent border-solid border-2 border-blue-500 text-blue-500 hover:bg-blue-700 hover:text-white font-bold mt-4 py-2 md:px-6 px-4 rounded-full focus:outline-none focus:shadow-outline"
               type="submit"
-            >
-              {t('userProfile.edit.cancele')}
-            </button>
-            <button
-              className="uppercase md:text-base text-sm bg-transparent border-solid border-2 border-blue-500 text-blue-500 hover:bg-blue-700 hover:text-white font-bold mt-4 py-2 md:px-6 px-4 rounded-full focus:outline-none focus:shadow-outline"
-              type="button"
-              onClick={props.getUserInfo}
             >
               {t('userProfile.edit.cancele')}
             </button>
