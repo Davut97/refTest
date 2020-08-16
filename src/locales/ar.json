@@ -1,4 +1,16 @@
 {
+  "navbar": {
+    "title1": "الصفحة الرئيسية",
+    "title2": "من نحن",
+    "title3": "للتواصل",
+    "title4": "المدونة",
+    "title5": "إنشاء حساب",
+    "title6": "خروج"
+  },
+  "aboutUs": {
+    "title": "من نحن",
+    "text": "تهدف المنظمات دائمًا إلى الربح، إلا أن هناك منظمات غير ربحية ليس لها أي هدف ربحي، ويجب التعرف على مفهوم الربحية قبل التطرُّق إلى بحث عن المنظمات غير الربحية، ترتبط الربحية ارتباطًا وثيقًا بالربح لكن هناك اختلاف رئيس واحد هو أن الربح قيمة مُطلقة بينما الربحية قيمة نسبية، وتعد الربحية المقياس المُستخدم لتحديد مدى ربح الشركة، فيما يتعلق بحجم الأعمال، كما وتعد معيارًا للكفاءة، وتُعرَّف الربحية أيضًا بقدرة المنظمة على تحقيق عائد على الاستثمار يستند على مواردها بالمقارنة مع استثمار بديل، وبالرغم من إمكانية المنظمة لتحقيق ربح فلا يعني هذا بالضرورة أن المنظمة مربحة."
+  },
   "about": {
     "title": "عن المشروع",
     "discreption": "صفحة عن المشروع",
@@ -126,5 +138,67 @@
       "save": "حفظ",
       "cancele": "إلغاء"
     }
-  }
+  },
+  "articles": [
+    {
+      "id": 1,
+      "author": {
+        "id": 1,
+        "name": "مجد الكينغ",
+        "avatar": "https://picsum.photos/seed/picsum/200/300",
+        "profile": "_blank"
+      },
+      "title": "العنوان العنوان العنوان العنوان",
+      "subTitle": " العنوان الفرعي العنوان الفرعي ",
+      "image": "https://via.placeholder.com/150",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora blanditiis placeat dolorum. Inventore aliquam modi veritatis commodi ratione perspiciatis est unde, doloremque natus. Porro, dolores? Distinctio ducimus odit exercitationem illum!",
+      "date": "تموز 18",
+      "dateTime": "2015-05-16 19:00"
+    },
+    {
+      "id": 2,
+      "author": {
+        "id": 2,
+        "name": "مجد الكينغ",
+        "avatar": "https://picsum.photos/seed/picsum/200/300",
+        "profile": "_blank"
+      },
+      "title": "العنوان العنوان العنوان العنوان",
+      "subTitle": " العنوان الفرعي العنوان الفرعي ",
+      "image": "https://via.placeholder.com/150",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora blanditiis placeat dolorum. Inventore aliquam modi veritatis commodi ratione perspiciatis est unde, doloremque natus. Porro, dolores? Distinctio ducimus odit exercitationem illum!",
+      "date": "تموز 18",
+      "dateTime": "2015-05-16 19:00"
+    },
+    {
+      "id": 3,
+      "author": {
+        "id": 3,
+        "name": "مجد الكينغ",
+        "avatar": "https://picsum.photos/seed/picsum/200/300",
+        "profile": "_blank"
+      },
+      "title": "العنوان العنوان العنوان العنوان",
+      "subTitle": " العنوان الفرعي العنوان الفرعي ",
+      "image": "https://via.placeholder.com/150",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora blanditiis placeat dolorum. Inventore aliquam modi veritatis commodi ratione perspiciatis est unde, doloremque natus. Porro, dolores? Distinctio ducimus odit exercitationem illum!",
+      "date": "تموز 18",
+      "dateTime": "2015-05-16 19:00"
+    },
+    {
+      "id": 4,
+      "author": {
+        "id": 4,
+        "name": "مجد الكينغ",
+        "avatar": "https://picsum.photos/seed/picsum/200/300",
+        "profile": "_blank"
+      },
+      "title": "العنوان العنوان العنوان العنوان",
+      "subTitle": " العنوان الفرعي العنوان الفرعي ",
+      "image": "https://via.placeholder.com/150",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora blanditiis placeat dolorum. Inventore aliquam modi veritatis commodi ratione perspiciatis est unde, doloremque natus. Porro, dolores? Distinctio ducimus odit exercitationem illum!",
+      "date": "تموز 18",
+      "dateTime": "2015-05-16 19:00"
+    }
+  ]
 }
