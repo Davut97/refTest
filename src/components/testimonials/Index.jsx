@@ -8,6 +8,7 @@ import WorldMap from '../../assets/world_map1.jpg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import { useTranslation } from 'react-i18next';
 const testimonialsCarouselSettings = {
   dots: true,
   infinite: true,
@@ -17,6 +18,7 @@ const testimonialsCarouselSettings = {
 };
 
 function Testimonials() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:pt-0 xl:pl-56 sm:pt-64  pt-20 space-y-6  ">
@@ -27,38 +29,29 @@ function Testimonials() {
           <Slider {...testimonialsCarouselSettings}>
             <div>
               <h3 className="text-gray-600 pt-2">
-                Two lines of a short testimonial from someone want to say something,
-                and can say more to explain.
+                {t('home.testimonials.first.text')}
               </h3>
               <p className="text-gray-600 pt-2">
-                Louis Li,<br></br> Trainer at Recoded
+                <strong>{t('home.testimonials.first.whoSay')}</strong>
+                <br></br> {t('home.testimonials.first.position')}
               </p>
             </div>
             <div>
               <h3 className="text-gray-600 pt-2">
-                Two lines of a short testimonial from someone want to say something,
-                and can say more to explain.
+                {t('home.testimonials.second.text')}
               </h3>
               <p className="text-gray-600 pt-2">
-                Louis Li,<br></br> Trainer at Recoded
+                <strong>{t('home.testimonials.second.whoSay')}</strong>
+                <br></br> {t('home.testimonials.second.position')}
               </p>
             </div>
             <div>
               <h3 className="text-gray-600 pt-2">
-                Two lines of a short testimonial from someone want to say something,
-                and can say more to explain.
+                {t('home.testimonials.second.text')}
               </h3>
               <p className="text-gray-600 pt-2">
-                Louis Li,<br></br> Trainer at Recoded
-              </p>
-            </div>
-            <div>
-              <h3 className="text-gray-600 pt-2">
-                Two lines of a short testimonial from someone want to say something,
-                and can say more to explain.
-              </h3>
-              <p className="text-gray-600 pt-2">
-                Louis Li,<br></br> Trainer at Recoded
+                <strong>{t('home.testimonials.second.whoSay')}</strong>
+                <br></br> {t('home.testimonials.second.position')}
               </p>
             </div>
           </Slider>
@@ -66,7 +59,7 @@ function Testimonials() {
       </div>
       <div className="grid grid-cols-1 ">
         <div className="pt-16 pl-18 pb-20 sm:pl-10 lg:pl-34">
-          <h2 className="capitalize text-blue-700 font-bold text-3xl">
+          <h2 className="capitalize text-center text-blue-700 font-bold text-3xl">
             our partners
           </h2>
         </div>

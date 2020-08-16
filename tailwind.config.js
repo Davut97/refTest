@@ -444,6 +444,7 @@ module.exports = {
       '30': '30',
       '40': '40',
       '50': '50',
+      '-10': '-10',
     },
     gap: (theme) => theme('spacing'),
     gridTemplateColumns: {
