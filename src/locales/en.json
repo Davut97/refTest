@@ -39,6 +39,18 @@
         "friendlyCommunity": "Enables people from all conflict-effected countris to actively participate in community activities and treats everyone with respect, regardless of their nationalities or ethnicities."
       }
     },
+    "testimonials": {
+      "first": {
+        "text": "Now more than ever, access to health for everyone should be within REACH.",
+        "whoSay": "Dr. Yanis Ben Amor",
+        "position": "Columbia University"
+      },
+      "second": {
+        "text": "We hope that the REACH Health App is an impactful digital solution for the youth to access health care facilities",
+        "whoSay": "Imad Hteit",
+        "position": "Poject Manager"
+      }
+    },
     "stories-section": {
       "title": "Latest Stories",
       "subtitle": "Discover the newest article written by an experinced refugees, take advantages of it or share your feedback with them.",

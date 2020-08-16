@@ -41,25 +41,15 @@ const Footer = () => {
       </div>
       <div className="mx-auto mt-10 md:mt-1 px-16">
         <div className="inline-block relative w-32">
-          <select className="block appearance-none w-full bg-transparent border border-blue-400 hover:border-blue-500 px-2 md:px-4 py-1 pr-4 md:pr-8 rounded-full text-gray-500 hover:text-gray-800 focus:outline-none focus:shadow-outline">
-            <option
-              onChange={() => {
-                changeLanguage('en');
-                i18next.dir('ltr');
-              }}
-              value="en"
-            >
-              English
-            </option>
-            <option
-              onChange={() => {
-                changeLanguage('ar');
-                i18next.dir('rtl');
-              }}
-              value="ar"
-            >
-              Arabic
-            </option>
+          <select
+            onChange={() => {
+              changeLanguage('en');
+              i18next.dir('ltr');
+            }}
+            className="block appearance-none w-full bg-transparent border border-blue-400 hover:border-blue-500 px-2 md:px-4 py-1 pr-4 md:pr-8 rounded-full text-gray-500 hover:text-gray-800 focus:outline-none focus:shadow-outline"
+          >
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
             <svg
