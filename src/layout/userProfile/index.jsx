@@ -22,9 +22,7 @@ const userInfo = {
   avatar: 'https://via.placeholder.com/150',
   profile: '',
 };
-const NavbarStyle =
-  'z-10 flex flex-col md:flex-row items-center justify-center md:justify-between flex-wrap bg-white p-4';
-const Btn = 'hidden';
+
 const UserProfile = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleIsOpen = () => {
@@ -36,7 +34,6 @@ const UserProfile = () => {
     return (
       <>
         <div className="flex flex-col  bg-blue-300 h-full">
-          <Navbar NavbarStyle={NavbarStyle} Btn={Btn} />
           <div className="flex flex-col bg-white h-full mx-4 my-4 lg:mx-16 lg:my-16 xl:mx-16 xl:my-16 rounded-lg">
             <Avatar
               user={userInfo}
