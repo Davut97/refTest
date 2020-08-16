@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ReactComponent as Camera } from '../../assets/camera.svg';
 import { useTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
@@ -16,9 +16,7 @@ const UserProfileEdit = (props) => {
   const [lastName, setLastName] = useState(lastNameDemo);
   const [bio, setBio] = useState(props.userInfo.bio);
   const [location, setLocation] = useState(props.userInfo.location);
-  useEffect(() => {
-    props.getUserInfo();
-  }, [props]);
+
   const { t } = useTranslation();
   return (
     <div className="bg-blue-100 h-screen flex flex-col items-center justify-center">
