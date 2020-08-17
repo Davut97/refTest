@@ -13,6 +13,7 @@ const testimonialsCarouselSettings = {
   dots: true,
   infinite: true,
   speed: 500,
+  arrows: false,
   slidesToShow: 1,
   slidesToScroll: 2,
 };
@@ -20,15 +21,18 @@ const testimonialsCarouselSettings = {
 function Testimonials() {
   const { t } = useTranslation();
   return (
-    <div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:pt-0 xl:pl-56 sm:pt-64  pt-20 space-y-6  ">
-        <div className="w-auto sm:w-1/2 md:w-full lg:w-32 xl:w-2/4 pt-10">
-          <img alt="world Map" src={WorldMap} />
+    <div className="my-8">
+      <h2 className="capitalize text-center text-blue-700 font-bold text-3xl xl:pt-20 sm:pt-10">
+        {t('home.testimonials.global-texts.testimonial-title')}
+      </h2>
+      <div className="flex flex-col xl:flex-row justify-evenly items-center py-8 lg:py-24">
+        <div className="pb-8 lg:pb-0 flex justify-center items-center">
+          <img className="w-1/2 mb-8 xl:mb-0" alt="world Map" src={WorldMap} />
         </div>
-        <div className="w-auto text-center sm:w-1/2 md:w-full lg:w-32 xl:w-2/4 pt-10 ">
+        <div className="flex-end text-center w-full xl:w-2/4">
           <Slider {...testimonialsCarouselSettings}>
             <div>
-              <h3 className="text-gray-600 pt-2">
+              <h3 className="text-gray-600 xl:w-1/2 text-center mx-auto">
                 {t('home.testimonials.first.text')}
               </h3>
               <p className="text-gray-600 pt-2">
@@ -37,7 +41,7 @@ function Testimonials() {
               </p>
             </div>
             <div>
-              <h3 className="text-gray-600 pt-2">
+              <h3 className="text-gray-600 xl:w-1/2 text-center mx-auto">
                 {t('home.testimonials.second.text')}
               </h3>
               <p className="text-gray-600 pt-2">
@@ -46,7 +50,7 @@ function Testimonials() {
               </p>
             </div>
             <div>
-              <h3 className="text-gray-600 pt-2">
+              <h3 className="text-gray-600 xl:w-1/2 text-center mx-auto">
                 {t('home.testimonials.second.text')}
               </h3>
               <p className="text-gray-600 pt-2">
@@ -60,7 +64,7 @@ function Testimonials() {
       <div className="grid grid-cols-1 ">
         <div className="pt-16 pl-18 pb-20 sm:pl-10 lg:pl-34">
           <h2 className="capitalize text-center text-blue-700 font-bold text-3xl">
-            our partners
+            {t('home.testimonials.global-texts.partners-title')}
           </h2>
         </div>
         <div className="pl-4 pb-6">
