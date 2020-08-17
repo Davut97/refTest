@@ -11,6 +11,7 @@ export const testimonialsCarouselSettings = {
   infinite: true,
   speed: 500,
   slidesToShow: 1,
+  arrows: false,
   slidesToScroll: 2,
 };
 export const OurProductsCarouselSettings = {
@@ -20,6 +21,7 @@ export const OurProductsCarouselSettings = {
   slidesToShow: 4,
   slidesToScroll: 4,
   initialSlide: 0,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1024,
