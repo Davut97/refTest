@@ -102,9 +102,10 @@ const UserProfileEdit = (props) => {
             <button
               className="uppercase md:text-base text-sm bg-blue-500 hover:bg-blue-700 text-white font-bold mt-4 mr-4 py-2 md:px-12 px-6 rounded-full focus:outline-none focus:shadow-outline"
               type="button"
-              onClick={() =>
-                props.changeUserBioAndLoc({ location, bio, firstName, lastName })
-              }
+              onClick={() => {
+                props.changeUserBioAndLoc({ location, bio, firstName, lastName });
+                alert('Information has been saved');
+              }}
             >
               {t('userProfile.edit.save')}
             </button>
